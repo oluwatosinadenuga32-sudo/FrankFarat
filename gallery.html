@@ -1,0 +1,189 @@
+<!-- ======================Gallery================ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Frankfarat Global Concept Limited</title>
+<meta name="description" content="Photo gallery of Frankfarat Global Concept Limited — civil engineering, construction and site work in Lagos, Nigeria.">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- plain image gallery, no JS ---- */
+  .gal-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  @media (max-width:920px){ .gal-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .gal-grid{ grid-template-columns:1fr; } }
+
+  .gal-card{ border:1px solid var(--line-strong); background:var(--paper); display:block; }
+  .gal-photo{ aspect-ratio:4/3; overflow:hidden; border-bottom:1px solid var(--line-strong); display:block; }
+  .gal-photo img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s var(--ease); }
+  .gal-card:hover .gal-photo img{ transform:scale(1.04); }
+  .gal-body{ padding:20px 22px 24px; }
+  .gal-body .cat{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--stamp); }
+  .gal-body h3{ font-size:17.5px; margin-top:10px; }
+  .gal-body p{ margin-top:8px; font-size:13.5px; color:var(--graphite-60); line-height:1.55; }
+
+  /* note box for swapping in real photos */
+  .swap-note{ border:1px dashed var(--line-strong); background:var(--paper); padding:20px 24px; font-size:13.5px; color:var(--graphite-60); margin-bottom:44px; }
+  .swap-note code{ font-family:var(--font-mono); background:var(--concrete-2); padding:2px 6px; border-radius:2px; }
+</style>
+</head>
+<body>
+
+<div class="blueprint-bg"></div>
+
+<header class="sheet-header">
+  <div class="wrap bar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21 L21 3 M21 3 L21 10 M21 3 L14 3 M3 21 L10 21 M3 21 L3 14"/></svg></span>
+      <span class="brand-text"><span class="name">Frankfarat</span><span class="tag">Global Concept Ltd.</span></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="team.html">Team</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Request a Quote</a>
+    <button class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="capabilities.html">Capabilities</a>
+  <a href="team.html">Team</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-amber">Request a Quote →</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="kicker"><a href="index.html">Home</a> / Gallery</div>
+    <h1>Photos from the field.</h1>
+    <p class="lede">A look at our work from site investigation through to handover.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="gal-grid">
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/c3e15844-b647-47ca-bfa4-3abae389f941.jpg" alt="Structural frame and erection"></span>
+        <div class="gal-body"><span class="cat">Design &amp; Engineering</span><h3>Structural Frame &amp; Erection</h3><p>Column and beam layout carried up alongside crane lift sequencing.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/Soil Investigation.webp" alt="Soil investigation"></span>
+        <div class="gal-body"><span class="cat">Site &amp; Construction</span><h3>Soil Investigation</h3><p>Ground sampling ahead of design, so foundations are sized against real conditions.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/Concreate pour.webp" alt="Reinforcement and concrete pour"></span>
+        <div class="gal-body"><span class="cat">Site &amp; Construction</span><h3>Reinforcement &amp; Concrete Pour</h3><p>Rebar mesh set within formwork before a controlled pour.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/Road drainage.webp" alt="Road and drainage works"></span>
+        <div class="gal-body"><span class="cat">Infrastructure &amp; Development</span><h3>Road &amp; Drainage Works</h3><p>Layered road profile and drainage tie-in on public works projects.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/material yard.webp" alt="Materials yard"></span>
+        <div class="gal-body"><span class="cat">Materials &amp; Logistics</span><h3>Materials Yard</h3><p>Cement, blocks and bricks staged and palletised, sourced through our own procurement desk.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/Material-draft.webp" alt="Design and drafting"></span>
+        <div class="gal-body"><span class="cat">Design &amp; Engineering</span><h3>Design &amp; Drafting</h3><p>Structural design and drawings reviewed before work starts on site.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/Site supervision.webp" alt="Site supervision and safety"></span>
+        <div class="gal-body"><span class="cat">Site &amp; Construction</span><h3>Site Supervision &amp; Safety</h3><p>Daily supervision and safety checks recorded against the agreed programme.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/haulage-logistics.webp" alt="Haulage and logistics"></span>
+        <div class="gal-body"><span class="cat">Materials &amp; Logistics</span><h3>Haulage &amp; Logistics</h3><p>Fleet-backed haulage moving materials and equipment on schedule.</p></div>
+      </div>
+
+      <div class="gal-card">
+        <span class="gal-photo"><img src="Images/Estate development.webp" alt="Estate development"></span>
+        <div class="gal-body"><span class="cat">Infrastructure &amp; Development</span><h3>Estate Development</h3><p>Acquiring, building and marketing landed property.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" style="padding:0;">
+  <div class="wrap cta-inner" style="padding:90px 28px;">
+    <div>
+      <div class="eyebrow" style="color:var(--amber);">Start A Project</div>
+      <h2>Tell us what you're building and we'll tell you what it takes.</h2>
+      <p>Send us your project type, location and timeline for a scoped response within one working day.</p>
+    </div>
+    <a href="contact.html" class="btn btn-amber">Request a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" style="border-color:var(--paper);color:var(--paper);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21 L21 3 M21 3 L21 10 M21 3 L14 3 M3 21 L10 21 M3 21 L3 14"/></svg></span>
+          <span class="brand-text"><span class="name">Frankfarat</span><span class="tag" style="color:rgba(247,246,242,0.55);">Global Concept Ltd.</span></span>
+        </a>
+        <p>A Lagos-based civil engineering consultancy and general contracting firm, incorporated under the Companies and Allied Matters Act 2020 — RC 1843403.</p>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Structural Engineering</a></li>
+          <li><a href="services.html">Soil Investigation</a></li>
+          <li><a href="services.html">General Contracting</a></li>
+          <li><a href="services.html">Materials Supply</a></li>
+          <li><a href="services.html">Haulage &amp; Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>4/6 Afisman Drive, Off Anifowose Street, Ikeja, Lagos State, Nigeria</li>
+          <li><a href="tel:+2348100058112">+234 810 005 8112</a></li>
+          <li><a href="tel:+2347047778214">+234 704 777 8214</a></li>
+          <li><a href="mailto:farati2016@gmail.com">farati2016@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span class="year"></span> Frankfarat Global Concept Limited · RC 1843403. All rights reserved.</span>
+      <span class="stamp"><span></span> Registered with the Corporate Affairs Commission, Nigeria</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

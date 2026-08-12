@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Frankfarat Global Concept Limited</title>
+<meta name="description" content="Get in touch with Frankfarat Global Concept Limited, Ikeja, Lagos State. Request a quote for structural engineering, construction, or materials supply.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .contact-grid{ display:grid; grid-template-columns:1fr 1.15fr; gap:60px; }
+  .field{ margin-bottom:22px; }
+  .field label{ display:block; font-family:var(--font-mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--graphite-60); margin-bottom:8px; }
+  .field input, .field select, .field textarea{
+    width:100%; border:1px solid var(--line-strong); background:var(--paper); padding:14px 14px;
+    font-family:var(--font-body); font-size:15px; color:var(--graphite); border-radius:var(--radius);
+    transition:border-color .2s var(--ease);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--navy); outline:none; }
+  .field textarea{ resize:vertical; min-height:120px; }
+  .row-2{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  @media (max-width:640px){ .row-2{ grid-template-columns:1fr; } .contact-grid{display: flex; flex-direction: column;}}
+  .form-status{ margin-top:18px; font-size:14px; color:var(--stamp); opacity:0; transition:opacity .3s var(--ease); font-family:var(--font-mono); }
+  .form-status.show{ opacity:1; }
+  .info-card{ display:flex; gap:18px; padding:22px 0; border-top:1px solid var(--line-strong); }
+  .info-card:last-child{ border-bottom:1px solid var(--line-strong); }
+  .info-card .ic{ width:22px; height:22px; flex:none; color:var(--stamp); margin-top:2px; }
+  .info-card h4{ font-size:15.5px; }
+  .info-card p{ margin-top:4px; color:var(--graphite-60); font-size:14px; }
+  .map-frame{ border:1px solid var(--line-strong); aspect-ratio:16/10; overflow:hidden; }
+</style>
+</head>
+<body>
+
+<div class="blueprint-bg"></div>
+
+<header class="sheet-header">
+  <div class="wrap bar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21 L21 3 M21 3 L21 10 M21 3 L14 3 M3 21 L10 21 M3 21 L3 14"/></svg></span>
+      <span class="brand-text"><span class="name">Frankfarat</span><span class="tag">Global Concept Ltd.</span></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Request a Quote</a>
+    <button class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="capabilities.html">Capabilities</a>
+  <a href="team.html">Team</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-amber">Request a Quote →</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="kicker"><a href="index.html">Home</a> / Contact</div>
+    <h1>Tell us about the project and we'll scope it from there.</h1>
+    <p class="lede">Fill in as much detail as you have. The more specific the brief, the faster we can come back with a realistic response on scope and timeline.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+
+    <div class="reveal">
+      <div class="eyebrow">Enquiry Form</div>
+      <h2 style="font-size:26px;margin-bottom:30px;">Request a quote</h2>
+      <form id="enquiry-form" novalidate>
+        <div class="row-2">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="080X XXX XXXX">
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com">
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label for="ptype">Project type</label>
+            <select id="ptype" name="ptype">
+              <option>Structural design / engineering consultancy</option>
+              <option>Soil investigation / site report</option>
+              <option>New construction</option>
+              <option>Renovation / repair</option>
+              <option>Materials supply / procurement</option>
+              <option>Mechanical &amp; electrical works</option>
+              <option>Haulage / logistics</option>
+              <option>Other / not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="budget">Estimated budget range</label>
+            <select id="budget" name="budget">
+              <option>Under ₦5,000,000</option>
+              <option>₦5,000,000 – ₦25,000,000</option>
+              <option>₦25,000,000 – ₦100,000,000</option>
+              <option>Above ₦100,000,000</option>
+              <option>Not yet determined</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="location">Project location</label>
+          <input type="text" id="location" name="location" placeholder="e.g. Lekki, Lagos State">
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" placeholder="Tell us about the site, scope and timeline…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Submit enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+        <p class="form-status"></p>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div class="eyebrow">Reach Us Directly</div>
+      <h2 style="font-size:26px;margin-bottom:6px;">Office &amp; contact details</h2>
+
+      <div class="info-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11ZM12 13a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg>
+        <div><h4>Registered Office</h4><p>4/6, Afisman Drive, Off Anifowose Street, Ikeja, Lagos State, Nigeria</p></div>
+      </div>
+      <div class="info-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .6a2 2 0 0 1 1.7 2Z"/></svg>
+        <div><h4>Phone</h4><p><a href="tel:+2348100058112">+234 810 005 8112</a> · <a href="tel:+2347047778214">+234 704 777 8214</a></p></div>
+      </div>
+      <div class="info-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4zM4 6l8 7 8-7"/></svg>
+        <div><h4>Email</h4><p><a href="mailto:farati2016@gmail.com">farati2016@gmail.com</a></p></div>
+      </div>
+      <div class="info-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg>
+        <div><h4>Business Hours</h4><p>Monday – Friday, 8:00am – 5:00pm (WAT). Site visits by appointment on Saturdays.</p></div>
+      </div>
+      <div class="info-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0ZM12 6v6l4 2"/></svg>
+        <div><h4>Response Time</h4><p>New enquiries submitted through this form receive a reply within one working day.</p></div>
+      </div>
+
+      <div class="map-frame" style="margin-top:28px;">
+        <iframe
+          title="Frankfarat Global Concept Limited location — Ikeja, Lagos"
+          width="100%" height="100%" style="border:0;"
+          loading="lazy"
+          src="https://www.google.com/maps?q=4%2F6+Afisman+Drive%2C+Off+Anifowose+Street%2C+Ikeja%2C+Lagos+State%2C+Nigeria&output=embed">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer style="margin-top:60px;">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" style="border-color:var(--paper);color:var(--paper);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21 L21 3 M21 3 L21 10 M21 3 L14 3 M3 21 L10 21 M3 21 L3 14"/></svg></span>
+          <span class="brand-text"><span class="name">Frankfarat</span><span class="tag" style="color:rgba(247,246,242,0.55);">Global Concept Ltd.</span></span>
+        </a>
+        <p>A Lagos-based civil engineering consultancy and general contracting firm, incorporated under the Companies and Allied Matters Act 2020 — RC 1843403.</p>
+      </div>
+      <div>
+        <h5>Sitemap</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Structural Engineering</a></li>
+          <li><a href="services.html">Soil Investigation</a></li>
+          <li><a href="services.html">General Contracting</a></li>
+          <li><a href="services.html">Materials Supply</a></li>
+          <li><a href="services.html">Haulage &amp; Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>4/6 Afisman Drive, Off Anifowose Street, Ikeja, Lagos State, Nigeria</li>
+          <li><a href="tel:+2348100058112">+234 810 005 8112</a></li>
+          <li><a href="tel:+2347047778214">+234 704 777 8214</a></li>
+          <li><a href="mailto:farati2016@gmail.com">farati2016@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span class="year"></span> Frankfarat Global Concept Limited · RC 1843403. All rights reserved.</span>
+      <span class="stamp"><span></span> Registered with the Corporate Affairs Commission, Nigeria</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
