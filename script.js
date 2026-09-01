@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
+  
   /* ---- header shadow on scroll ---- */
   const header = document.querySelector('.sheet-header');
   if (header) {
