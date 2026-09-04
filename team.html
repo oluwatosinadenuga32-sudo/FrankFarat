@@ -26,6 +26,24 @@
   .person-body h3{ font-size:19px; }
   .person-body .role{ font-family:var(--font-mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--stamp); margin-top:6px; display:block; }
   .person-body p{ margin-top:14px; color:var(--graphite-60); font-size:14.5px; }
+
+  .team-photo{
+  width:100%;
+  aspect-ratio:1 / 1;           /* square frame, adjust if you want portrait e.g. 3/4 */
+  overflow:hidden;
+  border-radius:4px;
+  margin-bottom:18px;
+  background:#eee;              /* shows while image loads */
+}
+
+  .team-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  margin-top: 30px;
+  object-position:center 28% ;   /* <-- this is the fix: keeps the head in frame */
+  display:block;
+}
 </style>
 </head>
 <body>
@@ -75,8 +93,8 @@
   <div class="wrap">
     <div class="grid-3 reveal-stagger">
       <div class="person">
-        <div style="aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid var(--line-strong);">
-          <img src="Images/e1f419c1-3a2a-4122-8f61-ec6c8ed037a3.jpg" alt="Site supervision" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <div class="team-photo" style="aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid var(--line-strong); ">
+          <img src="Images/8e1ed725-82c8-4cab-9969-67cb6b51d5b1.png" alt="Site supervision" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div class="person-body">
           <h3>Funmileyi Mathew Ogunde</h3>
@@ -87,8 +105,8 @@
         </div>
       </div>
       <div class="person">
-        <div style="aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid var(--line-strong);">
-          <img src="Images/1f472dda-a6fc-477e-b726-f68a1c5c1eff.jpg" alt="Site supervision" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <div class="team-photo" style="aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid var(--line-strong);">
+          <img src="Images/ff769b04-3c9d-4f8d-9f1d-4260a99f0a1b.png" alt="Site supervision" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div class="person-body">
           <h3>Oladele Ogunde</h3>
@@ -99,8 +117,8 @@
         </div>
       </div>
       <div class="person">
-        <div style="aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid var(--line-strong);">
-          <img src="Images/Temi.jpg" alt="Site supervision" style="width:100%;height:100%;object-fit:cover;display:block;">
+        <div class="team-photo" style="aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid var(--line-strong);">
+          <img src="Images/17682265-0074-4595-9670-60a47f0e9b02.png" alt="Site supervision" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div class="person-body">
           <h3>Temitope Olutomi Olufemisenbore</h3>
